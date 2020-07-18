@@ -1,9 +1,3 @@
----
-layout: default
-title: How to Debug Ruby on Rails with VSCode
-permalink: /
----
-
 # Ruby on Rails
 
 ## spec
