@@ -1,17 +1,23 @@
+---
+layout: default
+title: How to Debug Ruby on Rails with VSCode
+permalink: /
+---
+
 # Ruby on Rails
 
 ## spec
 
-* see [ruby](../ruby)
+- see [ruby](../ruby)
 
 ## how to debug local rails server
 
 ### setup
 
-* install rbenv: https://github.com/rbenv/rbenv
-* install ruby: `rbenv install 2.5.1`
-* set ruby version to local: `rbenv local 2.5.1`
-* add some gem to Gemfile
+- install rbenv: https://github.com/rbenv/rbenv
+- install ruby: `rbenv install 2.5.1`
+- set ruby version to local: `rbenv local 2.5.1`
+- add some gem to Gemfile
 
 ```
 group :development do
@@ -21,7 +27,7 @@ group :development do
 end
 ```
 
-* `bundle install`
+- `bundle install`
 
 ### .vscode/launch.json
 
@@ -46,12 +52,12 @@ end
 
 #### points
 
-* `useBundler: true`
+- `useBundler: true`
 
 ### execute
 
-* start debug, rails server will start.
-* access http://localhost:3000/
+- start debug, rails server will start.
+- access http://localhost:3000/
 
 ## how to debug remote rails server
 
@@ -76,15 +82,15 @@ end
 
 #### point
 
-* `"cdw"`: local dir
-* `"remoteWorkspaceRoot"`: remote server root dir
+- `"cdw"`: local dir
+- `"remoteWorkspaceRoot"`: remote server root dir
 
 ### execute
 
-* start rdebug-ide at remote server
+- start rdebug-ide at remote server
 
 ```
 bundle exec rdebug-ide --host 0.0.0.0 --port 1234  -- ./bin/rails server
 ```
 
-* start debug at vscode
+- start debug at vscode
